@@ -1,10 +1,7 @@
 
-# coding: utf-8
-
 import json
 import re
 import zstandard as zstd
-import json
 import lzma
 import datetime
 
@@ -110,7 +107,7 @@ for filename in filenames:
                     line['shared_words'] = ' '.join([str(elem) for elem in list(dict.fromkeys(antisemitics_list))])
                     line['socre_distint'] = score
                     remove_key(line, sample_dict)
-                    with open('antisemitics_{date[-7:]}.json', 'a') as outfile:
+                    with open('antisemitics2018-01to10.json', 'a') as outfile:
                         json.dump(line, outfile)
                         outfile.write('\n')
                         outfile.close()
