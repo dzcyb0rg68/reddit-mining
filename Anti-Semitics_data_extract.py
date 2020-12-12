@@ -1,7 +1,6 @@
 
 # coding: utf-8
 
-import nltk
 import json
 import re
 import zstandard as zstd
@@ -66,12 +65,24 @@ def remove_key(target_dict, source_dict):
 antisemitics_words = ['libel', 'clannish', 'conspiracy', 'cowardice', 'goyim', 'globalist', 'greed', 'holocaust', 'jew', 'jewish', 'illuminati', 'khazars', 'kosher', 'zionish', 'scapegoat', 'silencing', 'smirking', 'merchant']
 antisemitics_set = set(antisemitics_words)
 
-filenames = ["/l/research/social-media-mining/reddit/comments/RC_2019-01.zst"
-    # "/l/research/social-media-mining/reddit/comments/RC_2019-02.zst",
-    # "/l/research/social-media-mining/reddit/comments/RC_2019-03.zst",
-    # "/l/research/social-media-mining/reddit/comments/RC_2019-04.zst",
-    # "/l/research/social-media-mining/reddit/comments/RC_2019-05.zst",
-    # "/l/research/social-media-mining/reddit/comments/RC_2019-06.zst"
+filenames = ["/l/research/social-media-mining/reddit/comments/RC_2018-01.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-02.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-03.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-04.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-05.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-06.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-07.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-08.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-09.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-10.xz",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-11.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2018-12.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-01.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-02.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-03.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-04.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-05.zst",
+    "/l/research/social-media-mining/reddit/comments/RC_2019-06.zst"
             ]
 
 for filename in filenames:
@@ -99,7 +110,7 @@ for filename in filenames:
                     line['shared_words'] = ' '.join([str(elem) for elem in list(dict.fromkeys(antisemitics_list))])
                     line['socre_distint'] = score
                     remove_key(line, sample_dict)
-                    with open('antisemitics_2019-01.json', 'a') as outfile:
+                    with open('antisemitics_{date[-7:]}.json', 'a') as outfile:
                         json.dump(line, outfile)
                         outfile.write('\n')
                         outfile.close()
@@ -131,7 +142,7 @@ for filename in filenames:
                     line['shared_words'] = ' '.join([str(elem) for elem in list(dict.fromkeys(antisemitics_list))])
                     line['socre_distint'] = score
                     remove_key(line, sample_dict)
-                    with open('antisemitics_2019-01.json', 'a') as outfile:
+                    with open('antisemitics_{date[-7:]}.json', 'a') as outfile:
                         json.dump(line, outfile)
                         outfile.write('\n')
                         outfile.close()
