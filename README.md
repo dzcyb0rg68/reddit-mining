@@ -1,4 +1,4 @@
-# Antisemitic Tracing on Reddit: An Intersectional Approach TowardDissecting Ideologies
+# Antisemitic Tracing on Reddit: An Intersectional Approach Toward Dissecting Ideologies
 
 The   domain-specific   communities   thatform in subreddits may seem at first glanceto  cohere  around  the  topical  label  withwhich each subgroup is named.  However,such  a  surface-level  orientation  may  notbe as transparent in framing what is dis-cussed and how.  Particularly in detectinghate speech and other potentially harmfuldiscussions,  such  analysis  requires  morerobust  methods  to  detect  and  understandthe emergence of ideologies. In this study,we present an intersectional method of de-termining  likelihood  of  harmful  discus-sions.    Our  methodology  replicates  suc-cessful  detection  methods  from  previousstudies and suggests opportunity for morediscrete analysis.
 
