@@ -27,7 +27,7 @@ Please note that the original data files have 204.4GB and contain 793,326,999 re
 
 # Questions?
 
-Please reach out to the author at cc93@iu.edu
+Please reach out to the author Chang at cc93@iu.edu or Michalek at jasomich@iu.edu
 
 # Paper Preview
 
