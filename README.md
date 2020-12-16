@@ -31,8 +31,8 @@ Please reach out to the author Chang at cc93@iu.edu or Michalek at jasomich@iu.e
 
 # Paper Preview
 
-<object data="https://github.com/dzcyb0rg68/reddit-mining/raw/master/report/Final%20Project%20-%20Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/dzcyb0rg68/reddit-mining/raw/master/report/Final%20Project%20-%20Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf">
-        <p>Your browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/dzcyb0rg68/reddit-mining/raw/master/report/Final%20Project%20-%20Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf">Download PDF</a>.</p>
+<object data="https://github.com/dzcyb0rg68/reddit-mining/blob/master/report/Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/dzcyb0rg68/reddit-mining/blob/master/report/Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf">
+        <p>Your browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/dzcyb0rg68/reddit-mining/blob/master/report/Antisemitic%20Tracing%20on%20Reddit%20(Chang-Han%20and%20Michalek).pdf">Download PDF</a>.</p>
     </embed>
 </object>
